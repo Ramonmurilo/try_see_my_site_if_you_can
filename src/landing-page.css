@@ -1,0 +1,38 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: sans-serif;
+  background-color: #5BB8D4;
+}
+
+.texto-inicial {
+  text-align: center;
+}
+
+.buttons {
+  position: relative; /* Importante para o cálculo do botão não sair da área */
+  margin-top: 2rem;
+  min-height: 100px;
+}
+
+button {
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+  margin: 0 15px;
+}
+
+#start-button {
+  position: fixed; /* Permite movimentar livremente */
+  background-color: #f44336;
+  color: white;
+  transition: all 0.1s ease; /* Suaviza a transição de fuga */
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}

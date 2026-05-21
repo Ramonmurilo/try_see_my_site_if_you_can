@@ -18,6 +18,7 @@ npm run dev
 4. deployar no github pages
 ```
 npm run build
+# push
 npm run deploy
 ```
 

@@ -1,8 +1,15 @@
 import "react"
 import "./landing-page.css"
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 function LandingPage() {
+    const navigate = useNavigate();
+
+
+    const navigateToLogin = () => {
+        navigate("/login");
+    }
 
 
     function StartButton() {
@@ -30,8 +37,9 @@ function LandingPage() {
             id="start-button" 
             onMouseMove={handleMouseOver}
             style={stopped ? centeredStyle : {}}
+            onClick={navigateToLogin}
             >
-                {stopped ? 'its over! new features soon!' : "Let's GOOO"}
+                {stopped ? 'its over! next page is on construction!' : "Let's GOOO"}
             </button>
         );
     }

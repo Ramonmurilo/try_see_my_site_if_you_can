@@ -5,12 +5,22 @@ body {
   align-items: center;
   height: 100vh;
   margin: 0;
-  font-family: sans-serif;
-  background-color: #5BB8D4;
+  
+  background-image: linear-gradient(to top, #209cff 0%, #68e0cf 100%);
+
+  font-family: 'Happy Monkey', 'Comic Sans MS', cursive;
+  color: #2c2525; /* Cor mais suave que o preto puro */
+  line-height: 1.6; /* Melhora a leitura do texto */
+
 }
 
 .texto-inicial {
   text-align: center;
+}
+
+.texto-siga {
+  font-size: 1.5rem;
+  margin-top: 1rem;
 }
 
 .buttons {
@@ -30,10 +40,21 @@ button {
 
 #start-button {
   position: fixed; /* Permite movimentar livremente */
-  background-color: #f44336;
+  /* background-color: #f44336; */
+  background-image: linear-gradient(to right, #1A2980 0%, #26D0CE 51%, #1A2980 100%);
   color: white;
   transition: all 0.1s ease; /* Suaviza a transição de fuga */
+  margin-top: 30px;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+
+  box-shadow: 0 0 10px #273c96;
+  border-radius: 100px;
+}
+
+#start-button:hover {
+  background-position: right center;
+  color: #fff;
+  text-decoration: none;
 }

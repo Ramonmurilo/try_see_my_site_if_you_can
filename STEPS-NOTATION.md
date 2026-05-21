@@ -25,3 +25,11 @@ optional:
 nvm use
 ```
 
+
+### Configurações:
+
+Para configurar o githubpages deploy é necessário:
+
+- criar `.github/workflows/static.yml` para ter a action de deploy no github pages
+- o arquivo é específico para cada stack, pesquise o seu
+- vá nas configurações do repo github/pages e habilite com deploy via actions (e não via branch)

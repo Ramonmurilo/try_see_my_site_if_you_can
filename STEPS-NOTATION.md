@@ -15,6 +15,12 @@ npm install
 npm run dev
 ```
 
+4. deployar no github pages
+```
+npm run build
+npm run deploy
+```
+
 optional:
 ```
 nvm use
